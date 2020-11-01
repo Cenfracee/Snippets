@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.mobile.controller.DashBoardController">
+   <children>
+      <VBox layoutX="173.0" layoutY="49.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="45.0" prefWidth="320.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btn_ManageItem_OnAction" prefHeight="35.0" prefWidth="212.0" text="Manage Items">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="45.0" prefWidth="320.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnManageCustomer_OnAction" prefHeight="35.0" prefWidth="212.0" text="Manage Customers">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="45.0" prefWidth="320.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnUserSettings_OnAction" prefHeight="35.0" prefWidth="212.0" text="User Settings" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="45.0" prefWidth="320.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnLogout_OnAction" prefHeight="35.0" prefWidth="212.0" text="Logout" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
